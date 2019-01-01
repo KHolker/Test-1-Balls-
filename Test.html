@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<h1>Balls</h1>
+<p>There are several kinds of Balls. 
+    This kitten below may have balls. Hell I dont know. 
+</p>
+<img src="https://bit.ly/fcc-relaxing-cat">
+<p1>What is your opinion?</p1>
+<label><input type="radio"name="Cat Balls">Cat has balls</label>
+<label><input type="radio"name="Cat Balls"> Cat has No balls</label>
+     <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            .dropbtn {
+              background-color: #3498DB;
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+              cursor: pointer;
+            }
+            
+            .dropbtn:hover, .dropbtn:focus {
+              background-color: #2980B9;
+            }
+            
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              overflow: auto;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            .dropdown a:hover {background-color: #ddd;}
+            
+            .show {display: block;}
+            </style>
+            </head>
+            <body>
+            
+            
+            
+            
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Luke's Collection</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjbr4W5wsvfAhUkjoMKHUclAQ4QjRx6BAgBEAU&url=https%3A%2F%2Fwww.jbox.com%2Fpap036&psig=AOvVaw3M-bE_c0xgsH8hoTLAgbSc&ust=1546395541066317">Luke's jealous of</a>
+                <a href="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjhl4rcwsvfAhUC9YMKHTEJBvQQjRx6BAgBEAU&url=https%3A%2F%2Fimgflip.com%2Fmemetemplate%2F37463374%2FCat-Balls&psig=AOvVaw3M-bE_c0xgsH8hoTLAgbSc&ust=1546395541066317">Luke's favorite</a>
+                <a href="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjt_L7mwsvfAhVh9IMKHSRiDn0QjRx6BAgBEAU&url=https%3A%2F%2Fsoranews24.com%2F2012%2F12%2F12%2Fcat-nuts-small-furry-and-surprsingly-cute%2F&psig=AOvVaw3M-bE_c0xgsH8hoTLAgbSc&ust=1546395541066317">Lukes most visited</a>
+              </div>
+            </div>
+            
+            <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+            
+            </body>
+            </html>
+
+
+
+
